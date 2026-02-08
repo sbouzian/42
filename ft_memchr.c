@@ -6,7 +6,7 @@
 /*   By: sbouzian <sbouzian@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/08 14:01:10 by sbouzian          #+#    #+#             */
-/*   Updated: 2026/02/08 14:01:28 by sbouzian         ###   ########.fr       */
+/*   Updated: 2026/02/08 18:40:59 by sbouzian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t			i;
+	size_t				i;
 	const unsigned char	*ptr;
 
 	ptr = (const unsigned char *)s;

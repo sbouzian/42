@@ -6,7 +6,7 @@
 /*   By: sbouzian <sbouzian@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/08 14:15:02 by sbouzian          #+#    #+#             */
-/*   Updated: 2026/02/08 14:15:32 by sbouzian         ###   ########.fr       */
+/*   Updated: 2026/02/08 18:22:37 by sbouzian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 # include <stddef.h>
 
 /* ************************************************************************** */
-/*                                STRUCTURES                                  */
+/*                                ESTRUCTURA                                  */
 /* ************************************************************************** */
 
 typedef struct s_list
@@ -28,7 +28,7 @@ typedef struct s_list
 }	t_list;
 
 /* ************************************************************************** */
-/*                           PART 1 - LIBC FUNCTIONS                           */
+/*                         PARTE 1 - FUNCIONES LIBC                           */
 /* ************************************************************************** */
 
 int		ft_isalpha(int c);
@@ -66,7 +66,7 @@ void	*ft_calloc(size_t nmemb, size_t size);
 char	*ft_strdup(const char *s1);
 
 /* ************************************************************************** */
-/*                        PART 2 - ADDITIONAL FUNCTIONS                         */
+/*                      PARTE 2 - FUNCIONES ADICIONALES                       */
 /* ************************************************************************** */
 
 char	*ft_substr(char const *s, unsigned int start, size_t len);
@@ -85,7 +85,7 @@ void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 
 /* ************************************************************************** */
-/*                         PART 3 - LINKED LISTS                                */
+/*                        PARTE 3 - LISTAS ENLAZADAS                          */
 /* ************************************************************************** */
 
 t_list	*ft_lstnew(void *content);

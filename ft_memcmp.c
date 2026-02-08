@@ -6,7 +6,7 @@
 /*   By: sbouzian <sbouzian@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/08 14:02:20 by sbouzian          #+#    #+#             */
-/*   Updated: 2026/02/08 14:02:30 by sbouzian         ###   ########.fr       */
+/*   Updated: 2026/02/08 18:40:49 by sbouzian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	size_t			i;
+	size_t				i;
 	const unsigned char	*p1;
 	const unsigned char	*p2;
 

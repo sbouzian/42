@@ -59,7 +59,7 @@ Durante el desarrollo de este proyecto se utilizaron los siguientes recursos:
 
 ---
 
-## AI Usage
+## Uso de la IA
 
 Las herramientas de inteligencia artificial fueron utilizadas como recurso de apoyo y aprendizaje durante el proyecto.
 
@@ -70,7 +70,7 @@ Se utilizaron para:
 - Apoyar la comprensión de temas complejos como la gestión de memoria y las listas enlazadas.  
 - Evitar bloqueos durante momentos de frustración o sobrecarga mental al enfrentarse a muchos conceptos nuevos al mismo tiempo.
 
-El uso de la inteligencia artificial tuvo como objetivo permitir seguir avanzando en el proyecto manteniendo una mentalidad de aprendizaje, con la intención de revisar y comprender completamente el código después de la entrega principal.
+El uso de la inteligencia artificial tuvo como objetivo permitir seguir avanzando en el proyecto manteniendo una mentalidad de aprendizaje, con la intención de revisar y comprender completamente el código antes de la entrega principal.
 
 ---
 

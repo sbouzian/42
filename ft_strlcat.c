@@ -1,28 +1,3 @@
-<<<<<<< HEAD:ft_strlcat.c
-#include "libft.h"
-
-size_t ft_strlcat(char *dest, const char *src, size_t size)
-{
-    size_t i;
-    size_t len_dst;
-    size_t len_src;
-
-    len_dst = ft_strlen(dest);
-    len_src = ft_strlen(src);
-
-    if (size <= len_dst)
-        return (size + len_src);
-
-    i = 0;
-    while (src[i] != '\0' && (len_dst + i + 1) < size)
-    {
-        dest[len_dst + i] = src[i];
-        i++;
-    }
-
-    dest[len_dst + i] = '\0';
-    return (len_dst + len_src);
-=======
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -31,7 +6,7 @@ size_t ft_strlcat(char *dest, const char *src, size_t size)
 /*   By: sbouzian <sbouzian@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/08 13:56:34 by sbouzian          #+#    #+#             */
-/*   Updated: 2026/02/08 13:56:38 by sbouzian         ###   ########.fr       */
+/*   Updated: 2026/02/08 18:19:32 by sbouzian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,5 +31,4 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	if (dlen + i < dstsize)
 		dst[dlen + i] = '\0';
 	return (dlen + slen);
->>>>>>> 3959c2e (subimos todas las funciones y archivos con header):Libft/ft_strlcat.c
 }

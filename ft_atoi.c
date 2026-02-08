@@ -6,7 +6,7 @@
 /*   By: sbouzian <sbouzian@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/08 14:03:26 by sbouzian          #+#    #+#             */
-/*   Updated: 2026/02/08 14:03:49 by sbouzian         ###   ########.fr       */
+/*   Updated: 2026/02/08 18:41:22 by sbouzian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_atoi(const char *str)
 {
-	int	sign;
+	int		sign;
 	long	result;
 
 	sign = 1;
