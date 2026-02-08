@@ -1,18 +1,32 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sbouzian <sbouzian@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/02/08 13:14:50 by sbouzian          #+#    #+#             */
+/*   Updated: 2026/02/08 13:15:05 by sbouzian         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-void    *ft_memcpy(*dest, const void *src, size_t n)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-    unsigned char   *d;
-    const unsigned char *s;
-    size_t  i;
+	size_t				i;
+	unsigned char		*d;
+	const unsigned char	*s;
 
-    d = (unsigned char *)dest;
-    s = (const unsigned char *)src;
-    i = 0;
-    while (i < n)
-    {
-        d[i] = s[i];
-        i++;
-    }
-    return (dest);
+	if (!dst && !src)
+		return (NULL);
+	d = (unsigned char *)dst;
+	s = (const unsigned char *)src;
+	i = 0;
+	while (i < n)
+	{
+		d[i] = s[i];
+		i++;
+	}
+	return (dst);
 }

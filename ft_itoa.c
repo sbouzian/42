@@ -1,40 +1,54 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sbouzian <sbouzian@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/08 13:15:36 by sbouzian          #+#    #+#             */
-/*   Updated: 2026/02/08 13:16:55 by sbouzian         ###   ########.fr       */
+/*   Created: 2026/02/08 14:07:25 by sbouzian          #+#    #+#             */
+/*   Updated: 2026/02/08 14:07:28 by sbouzian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dst, const void *src, size_t len)
+static int	num_len(int n)
 {
-	size_t				i;
-	unsigned char		*d;
-	const unsigned char	*s;
+	int	len;
 
-	if (!dst && !src)
+	len = 1;
+	while (n / 10)
+	{
+		len++;
+		n /= 10;
+	}
+	return (len);
+}
+
+char	*ft_itoa(int n)
+{
+	char	*str;
+	long	nb;
+	int		len;
+
+	nb = n;
+	len = num_len(nb);
+	if (nb < 0)
+	{
+		nb = -nb;
+		len++;
+	}
+	str = (char *)malloc(len + 1);
+	if (!str)
 		return (NULL);
-	d = (unsigned char *)dst;
-	s = (const unsigned char *)src;
-	if (d < s)
+	str[len--] = '\0';
+	while (len >= 0)
 	{
-		i = 0;
-		while (i < len)
-		{
-			d[i] = s[i];
-			i++;
-		}
+		str[len] = (nb % 10) + '0';
+		nb /= 10;
+		if (len == 0 && n < 0)
+			str[len] = '-';
+		len--;
 	}
-	else
-	{
-		while (len--)
-			d[len] = s[len];
-	}
-	return (dst);
+	return (str);
 }

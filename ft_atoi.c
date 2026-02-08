@@ -1,40 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sbouzian <sbouzian@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/08 13:15:36 by sbouzian          #+#    #+#             */
-/*   Updated: 2026/02/08 13:16:55 by sbouzian         ###   ########.fr       */
+/*   Created: 2026/02/08 14:03:26 by sbouzian          #+#    #+#             */
+/*   Updated: 2026/02/08 14:03:49 by sbouzian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dst, const void *src, size_t len)
+int	ft_atoi(const char *str)
 {
-	size_t				i;
-	unsigned char		*d;
-	const unsigned char	*s;
+	int	sign;
+	long	result;
 
-	if (!dst && !src)
-		return (NULL);
-	d = (unsigned char *)dst;
-	s = (const unsigned char *)src;
-	if (d < s)
+	sign = 1;
+	result = 0;
+	while (*str == ' ' || (*str >= 9 && *str <= 13))
+		str++;
+	if (*str == '-' || *str == '+')
 	{
-		i = 0;
-		while (i < len)
-		{
-			d[i] = s[i];
-			i++;
-		}
+		if (*str == '-')
+			sign = -1;
+		str++;
 	}
-	else
+	while (*str >= '0' && *str <= '9')
 	{
-		while (len--)
-			d[len] = s[len];
+		result = result * 10 + (*str - '0');
+		str++;
 	}
-	return (dst);
+	return ((int)(result * sign));
 }
