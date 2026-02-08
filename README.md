@@ -74,7 +74,7 @@ El uso de la inteligencia artificial tuvo como objetivo permitir seguir avanzand
 
 ---
 
-## Notes
+## Notas
 
 Esta biblioteca está pensada para ser reutilizada y ampliada a lo largo del cursus de 42.
 

@@ -6,11 +6,12 @@
 /*   By: sbouzian <sbouzian@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/08 13:13:18 by sbouzian          #+#    #+#             */
-/*   Updated: 2026/02/08 18:17:38 by sbouzian         ###   ########.fr       */
+/*   Updated: 2026/02/08 19:14:38 by sbouzian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 void	*ft_memset(void *b, int c, size_t len)
 {
