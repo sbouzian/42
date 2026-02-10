@@ -6,12 +6,14 @@
 /*   By: sbouzian <sbouzian@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/08 13:54:26 by sbouzian          #+#    #+#             */
-/*   Updated: 2026/02/08 18:17:06 by sbouzian         ###   ########.fr       */
+/*   Updated: 2026/02/10 20:10:41 by sbouzian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/* English: Create a new list by applying f to each element of lst. */
+/* Spanish: Crea una nueva lista aplicando f a cada elemento de lst. */
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*new_lst;

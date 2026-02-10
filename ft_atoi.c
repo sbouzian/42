@@ -6,12 +6,14 @@
 /*   By: sbouzian <sbouzian@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/08 14:03:26 by sbouzian          #+#    #+#             */
-/*   Updated: 2026/02/08 18:41:22 by sbouzian         ###   ########.fr       */
+/*   Updated: 2026/02/10 20:10:41 by sbouzian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/* English: Convert a string to an integer (similar to atoi). */
+/* Spanish: Convierte una cadena a un entero (similar a atoi). */
 int	ft_atoi(const char *str)
 {
 	int		sign;

@@ -6,12 +6,14 @@
 /*   By: sbouzian <sbouzian@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/08 14:00:15 by sbouzian          #+#    #+#             */
-/*   Updated: 2026/02/08 18:20:18 by sbouzian         ###   ########.fr       */
+/*   Updated: 2026/02/10 20:10:41 by sbouzian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/* English: Compare at most n bytes of two strings. */
+/* Spanish: Compara como máximo n bytes de dos cadenas. */
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	i;

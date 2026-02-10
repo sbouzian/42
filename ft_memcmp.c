@@ -6,12 +6,14 @@
 /*   By: sbouzian <sbouzian@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/08 14:02:20 by sbouzian          #+#    #+#             */
-/*   Updated: 2026/02/08 18:40:49 by sbouzian         ###   ########.fr       */
+/*   Updated: 2026/02/10 20:10:41 by sbouzian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/* English: Compare the first n bytes of s1 and s2. */
+/* Spanish: Compara los primeros n bytes de s1 y s2. */
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	size_t				i;

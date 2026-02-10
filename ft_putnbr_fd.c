@@ -6,12 +6,14 @@
 /*   By: sbouzian <sbouzian@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/08 14:11:15 by sbouzian          #+#    #+#             */
-/*   Updated: 2026/02/08 18:17:50 by sbouzian         ###   ########.fr       */
+/*   Updated: 2026/02/10 20:15:39 by sbouzian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/* English: Write an integer as characters to the given file descriptor. */
+/* Spanish:Escribe un entero como caracteres en el descriptor de archivo dado.*/
 void	ft_putnbr_fd(int n, int fd)
 {
 	char	c;

@@ -6,12 +6,14 @@
 /*   By: sbouzian <sbouzian@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/08 14:04:39 by sbouzian          #+#    #+#             */
-/*   Updated: 2026/02/08 18:18:21 by sbouzian         ###   ########.fr       */
+/*   Updated: 2026/02/10 20:10:41 by sbouzian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/* English: Allocate and copy the string s1 to a new memory area. */
+/* Spanish: Reserva y copia la cadena s1 en una nueva área de memoria. */
 char	*ft_strdup(const char *s1)
 {
 	char	*dup;

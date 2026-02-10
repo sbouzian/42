@@ -6,12 +6,14 @@
 /*   By: sbouzian <sbouzian@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/08 14:05:54 by sbouzian          #+#    #+#             */
-/*   Updated: 2026/02/08 18:18:25 by sbouzian         ###   ########.fr       */
+/*   Updated: 2026/02/10 20:10:41 by sbouzian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/* English: Concatenate s1 and s2 into a new string. */
+/* Spanish: Concadena s1 y s2 en una nueva cadena. */
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*res;

@@ -6,12 +6,14 @@
 /*   By: sbouzian <sbouzian@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/08 13:09:46 by sbouzian          #+#    #+#             */
-/*   Updated: 2026/02/08 13:10:11 by sbouzian         ###   ########.fr       */
+/*   Updated: 2026/02/10 20:10:41 by sbouzian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/* English: Check if c is alphanumeric (letter or digit). */
+/* Spanish: Comprueba si c es alfanumérico (letra o dígito). */
 int	ft_isalnum(int c)
 {
 	if ((c >= 'A' && c <= 'Z')

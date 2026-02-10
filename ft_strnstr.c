@@ -6,12 +6,15 @@
 /*   By: sbouzian <sbouzian@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/08 14:02:59 by sbouzian          #+#    #+#             */
-/*   Updated: 2026/02/08 18:20:21 by sbouzian         ###   ########.fr       */
+/*   Updated: 2026/02/10 20:16:50 by sbouzian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/* English:Locate the first occurrence of needle in haystack within len bytes.*/
+/* Spanish: Localiza la primera ocurrencia de needle en haystack dentro de len
+bytes. */
 char	*ft_strnstr(const char *h, const char *n, size_t len)
 {
 	size_t	i;

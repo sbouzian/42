@@ -6,7 +6,7 @@
 /*   By: sbouzian <sbouzian@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/08 14:07:25 by sbouzian          #+#    #+#             */
-/*   Updated: 2026/02/08 18:51:34 by sbouzian         ###   ########.fr       */
+/*   Updated: 2026/02/10 20:10:41 by sbouzian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ static int	num_len(int n)
 	return (len);
 }
 
+/* English: Convert an integer to its string representation. */
+/* Spanish: Convierte un entero a su representación en cadena. */
 char	*ft_itoa(int n)
 {
 	char	*str;

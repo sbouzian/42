@@ -6,12 +6,14 @@
 /*   By: sbouzian <sbouzian@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/08 14:04:09 by sbouzian          #+#    #+#             */
-/*   Updated: 2026/02/08 18:16:23 by sbouzian         ###   ########.fr       */
+/*   Updated: 2026/02/10 20:13:41 by sbouzian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*English: Allocate memory for count elements of size and initialize to zero.*/
+/*Spanish: Reserva memoria para count elementos de size y la inicializa a cero*/
 void	*ft_calloc(size_t nmemb, size_t size)
 {
 	size_t	total;

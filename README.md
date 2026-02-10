@@ -1,6 +1,6 @@
 # Libft
 
-*Este proyecto ha sido creado como parte del currículo de 42 por <sbouzian>.*
+*Este proyecto ha sido creado como parte del currículo de 42 por **sbouzian**.*
 
 ---
 

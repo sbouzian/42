@@ -6,7 +6,7 @@
 /*   By: sbouzian <sbouzian@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/08 14:06:51 by sbouzian          #+#    #+#             */
-/*   Updated: 2026/02/08 18:18:14 by sbouzian         ###   ########.fr       */
+/*   Updated: 2026/02/10 20:10:41 by sbouzian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,8 @@ static char	*word_dup(char const *s, int start, int end)
 	return (word);
 }
 
+/* English: Split a string into an array of strings using a delimiter. */
+/* Spanish: Divide una cadena en un array de cadenas usando un delimitador. */
 char	**ft_split(char const *s, char c)
 {
 	char	**arr;
