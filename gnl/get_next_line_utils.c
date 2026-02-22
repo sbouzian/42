@@ -6,12 +6,18 @@
 /*   By: sbouzian <sbouzian@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/22 17:45:33 by sbouzian          #+#    #+#             */
-/*   Updated: 2026/02/22 17:48:09 by sbouzian         ###   ########.fr       */
+/*   Updated: 2026/02/22 17:59:07 by sbouzian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
+/*
+ * ES: Calcula y devuelve la longitud de la cadena 's'. Si 's' es NULL,
+ * ES: devuelve 0.
+ * EN: Compute and return the length of the string 's'. If 's' is NULL,
+ * EN: return 0.
+ */
 int	ft_strlen(char *s)
 {
 	int	i;
@@ -24,6 +30,12 @@ int	ft_strlen(char *s)
 	return (i);
 }
 
+/*
+ * ES: Busca la primera ocurrencia del carácter 'c' en la cadena 's'.
+ * ES: Devuelve un puntero a la posición encontrada o NULL si no existe.
+ * EN: Find the first occurrence of character 'c' in string 's'.
+ * EN: Return a pointer to the found position or NULL if not found.
+ */
 char	*ft_strchr(char *s, int c)
 {
 	int	i;
@@ -42,6 +54,10 @@ char	*ft_strchr(char *s, int c)
 	return (NULL);
 }
 
+/*
+ * ES: Reserva memoria y duplica la cadena 's', devolviendo el nuevo puntero.
+ * EN: Allocate memory and duplicate the string 's', returning the new ptr.
+ */
 char	*ft_strdup(char *s)
 {
 	char	*new;
@@ -60,6 +76,12 @@ char	*ft_strdup(char *s)
 	return (new);
 }
 
+/*
+ * ES: Crea una subcadena desde 'start' con longitud 'len'. Si 'start' está
+ * ES: fuera de la cadena devuelve una cadena vacía con malloc.
+ * EN: Create a substring from 'start' with length 'len'. If 'start' is
+ * EN: beyond the string, return an empty malloc'd string.
+ */
 char	*ft_substr(char *s, int start, int len)
 {
 	char	*new;
@@ -77,6 +99,12 @@ char	*ft_substr(char *s, int start, int len)
 	return (new);
 }
 
+/*
+ * ES: Concatena 's1' y 's2' en un nuevo buffer. Libera 's1' antes de
+ * ES: devolver el nuevo puntero.
+ * EN: Join 's1' and 's2' into a new buffer. Free 's1' before returning
+ * EN: the new pointer.
+ */
 char	*ft_strjoin(char *s1, char *s2)
 {
 	char	*new;

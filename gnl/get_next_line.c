@@ -6,19 +6,25 @@
 /*   By: sbouzian <sbouzian@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/22 17:39:55 by sbouzian          #+#    #+#             */
-/*   Updated: 2026/02/22 17:42:50 by sbouzian         ###   ########.fr       */
+/*   Updated: 2026/02/22 18:01:12 by sbouzian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
+/*
+ * ES: Lee del descriptor 'fd' hasta encontrar una nueva línea o EOF.
+ * ES: Mantiene en 'stash' los datos leídos concatenados entre llamadas.
+ * EN: Read from file descriptor 'fd' until a newline or EOF is found.
+ * EN: Keep read data concatenated in 'stash' between calls.
+ */
 char	*read_file(int fd, char *stash)
 {
 	char	buffer[BUFFER_SIZE + 1];
 	int		bytes;
 
-	bytes = 1
-		while (!ft_strchr(stash, '\n') && bytes > 0)
+	bytes = 1;
+	while (!ft_strchr(stash, '\n') && bytes > 0)
 	{
 		bytes = read(fd, buffer, BUFFER_SIZE);
 		if (bytes < 0)
@@ -31,6 +37,10 @@ char	*read_file(int fd, char *stash)
 	return (stash);
 }
 
+/*
+ * ES: Extrae la línea (incluyendo '\n' si existe) desde 'stash'.
+ * EN: Extract the next line (including '\n' if present) from 'stash'.
+ */
 char	*extract_line(char *stash)
 {
 	int	i;
@@ -45,6 +55,12 @@ char	*extract_line(char *stash)
 	return (ft_substr(stash, 0, i));
 }
 
+/*
+ * ES: Elimina la línea extraída de 'stash' y devuelve el resto.
+ * ES: Si no quedan datos libera y devuelve NULL.
+ * EN: Remove the extracted line from 'stash' and return the rest.
+ * EN: If no data remains free memory and return NULL.
+ */
 char	*clean_stash(char *stash)
 {
 	int		i;
@@ -60,6 +76,12 @@ char	*clean_stash(char *stash)
 	return (new);
 }
 
+/*
+ * ES: Función pública que devuelve la siguiente línea del descriptor 'fd'.
+ * ES: Maneja 'stash' estático y errores de lectura.
+ * EN: Public function returning next line from descriptor 'fd'.
+ * EN: Manages static 'stash' and read errors.
+ */
 char	*get_next_line(int fd)
 {
 	static char	*stash;
