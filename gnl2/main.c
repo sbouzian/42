@@ -1,12 +1,13 @@
 #include "get_next_line.h"
+#include <fcntl.h>
 
-int main(void)
+int main(int ac, char **av)
 {
-	char	*s1;
-	char	*s2;
-
-	s1 = NULL;
-	s2 = "barbaridad";
-	printf("STRJOIN %s", ft_strjoin(s1, s2));
+	int fd;
+	(void)ac;
+	fd = open(av[1], O_RDONLY);
+	if (fd < 0)
+		return (1);
+	get_next_line(fd);
 	return (0);
 }

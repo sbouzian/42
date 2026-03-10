@@ -36,6 +36,20 @@ char	*ft_strjoin(char *s1, char *s2)
 		i++;
 		j++;
 	}
+	result[i] = '\0';
+	printf("%s", result);
 	return (result);
 }
 
+char	*ft_strchr(const char *s, int c)
+{
+	while (*s)
+	{
+		if (*s == (char)c)
+			return ((char *)s);
+		s++;
+	}
+	if (*s == (char)c)
+		return ((char *)s);
+	return (NULL);
+}

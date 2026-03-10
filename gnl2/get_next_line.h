@@ -3,9 +3,15 @@
 
 # include <stdio.h>
 # include <stdlib.h>
+# include <unistd.h>
 
-# define BUFFER_SIZE = 42
+# ifndef BUFFER_SIZE
+# define BUFFER_SIZE 2
+#endif
 
+int	ft_strlen(char *s);
 char	*ft_strjoin(char *s1, char *s2);
+char 	*get_next_line(int fd);
+char	*ft_strchr(const char *s, int c);
 
 #endif
